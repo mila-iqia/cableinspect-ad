@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="CableInspect-AD: An Expert-Annotated Anomaly Detection Dataset">
+  <meta name="keywords" content="Preventative maintenance, Anomaly detection, Visual Inspection, Instance-based AD, Dataset, Benchmark, Vision-Language Models, Real-world applications, Evaluation framework, Few-shot learning, Zero-shot learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CableInspect-AD: An Expert-Annotated Anomaly Detection Dataset</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/mila-favicon.ico" type="image/vnd.microsoft.icon" />
+
+  <!-- <link rel="icon" href="./static/images/Mila_LOGO.png"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://mila.quebec/en/industry/applied-machine-learning-research/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">CableInspect-AD: An Expert-Annotated Anomaly Detection Dataset</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Akshatha Arodi<sup>1*</sup>,</span>
+            <span class="author-block">
+              Margaux Luck<sup>1*</sup>,</span>
+            <span class="author-block">
+              Jean-Luc Bedwani<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Aldo Zaimi<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Ge Li<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Nicolas Pouliot<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Julien Beaudry<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Gaétan Marceau Caron<sup>1</sup>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Mila - Quebec AI Institute,</span>
+            <span class="author-block"><sup>2</sup>Institut de recherche d'Hydro-Québec</span>
+          </div>
+          <p class="is-size-7 is-text-centered">
+              *Denotes equal contribution
+          </p>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+<!--               <span class="link-block">
+                <a href=#
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href=#
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+<!--               <span class="link-block">
+                <a href=#
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=#
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href=#
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div id="carousel-demo" class="carousel results-carousel">
+        <div class="item-1">
+          <video id="cable-3" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/cable_C03.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item-2">
+          <video id="cable-1" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/cable_C01.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item-3">
+          <video id="cable-2" autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/cable_C02.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        <em>CableInspect-AD</em> features power line cables with several types of defects, replicated with high-fidelity by domain experts from Hydro-Québec, a Canadian public utility, to reproduce realistic conditions for robotic inspection. Use the carrousel arrows above to inspect the different cables.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Machine learning models are increasingly being deployed in real-world contexts. However, systematic studies on their transferability to specific and critical applications are underrepresented in the research literature. An important example is visual anomaly detection (VAD) for robotic power line inspection. While existing AD methods perform well in controlled environments, real-world scenarios present diverse and unexpected anomalies that current datasets fail to capture. To address this gap, we introduce <em>CableInspect-AD</em>, a high-quality, publicly available dataset created and annotated by domain experts from Hydro-Québec, a Canadian public utility. This dataset includes high-resolution images with challenging real-world anomalies, covering defects with varying severity levels. To address the challenges of collecting diverse anomalous and nominal examples for setting a detection threshold, we propose <em>Enhanced-PatchCore</em>, an enhancement to the celebrated PatchCore algorithm. This enhancement enables its use in scenarios with limited labeled data. We also present a comprehensive evaluation protocol based on cross-validation to assess models' performances. We evaluate our <em>Enhanced-PatchCore</em> for few-shot and many-shot detection, and Vision-Language Models for zero-shot detection. While promising, these models struggle to detect all anomalies, highlighting the dataset's value as a challenging benchmark for the broader research community. 
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            Robotic power line inspection represents a specialized and highly challenging domain characterized by a wide range of anomalies, further complicated by the changing appearance of cables due to natural wear. Recognizing the importance of open-science and transparency in evaluating machine learning models for such complex real-world applications, there is a clear need for more public industrial datasets. To this end, we introduce <em>CableInspect-AD</em> features 4,798 high-resolution images and 6,023 annotated anomalies across three types of power line cables that differ in color, texture, and braiding. These anomalies represent the seven most common defect types listed by Hydro-Québec, with varying severity levels. They are meticulously crafted by experts and are annotated at the image level, the pixel level, and with bounding boxes, to provide a detailed categorization of those anomalies both by type and by severity level. 
+          </p>
+          <p>
+            <img id="anomaly_mosaic" src="./static/images/anomalies_mosaic.png" alt="Masaic">
+          </p>
+          <p>
+            The figure shows some examples of anomalies created on the cables by experts. On each image, the anomaly types (grades) are annotated (masks outlined). The grades here are (I)mportant, (L)ight, (C)omplete, (E)xtracted and (D)eep. Anomalies such as long scratches(I) are hard to spot, whereas deposit(I) and spaced strands(I) are easier.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Prototype. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Prototype</h2>
+          <p> The data associated with each instance was acquired through a meticulous manual process. To achieve this, experts selected three cables in operation and identified seven types of anomalies, each categorized by severity grades. Some of these anomalies were manually created by experts. Here, we show the apparatus used to simulate the power line inspection robot and to control the background and the lighting during the acquisition. 
+
+          </p>
+          <img id="robot" src="./static/images/robot.png" alt="robot">
+        </div>
+      </div>
+      <!--/ Prototype. -->
+
+      <!-- Annotation. -->
+      <div class="column">
+        <h2 class="title is-3">Annotation</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Here, we show example images after annotation. The images below show instances with more than one anomaly type in the same image with masks. It also highlights the variation in the appearance of different cables.
+          </p>
+          <p>
+            <img id="annotation" src="./static/images/defect_with_multiple_anomaly_type.png" alt="annotation">
+            <img id="annotation" src="./static/images/defect_with_multiple_anomaly_type2.png" alt="annotation">
+          </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--/ Annotation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <!-- <h2 class="title is-3">Dataset versions</h2>
+        <div class="content has-text-justified">
+          <p>
+            We release two versions of the dataset: (1) CableInspect-AD_raw, which contains the original images with background, and (2) CableInspect-AD_cropped, which contains the images with the background removed, keeping only the central part of the cables. The latter dataset was generated by extracting a central band of size 224 x 1120. We provide a script to generate the cropped version of the dataset. The images below show an example of raw and cropped versions.
+          </p>
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column">
+                <div class="content">
+                  <img id="raw" src="./static/images/cbl1_org.jpg" alt="F1 score">
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="content">
+                  <img id="cropped" style="display: inline-block;" src="./static/images/cbl1_cropped.png" alt="F1 score">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> -->
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p> To address the challenges of collecting diverse anomalous and nominal examples for setting a detection threshold, we introduce <em>Enhanced-PatchCore</em> an improved approach to <a href="https://arxiv.org/abs/2106.08265">PatchCore</a> that sets thresholds using only a training set with a few nominal images. We define a comprehensive evaluation protocol based on cross-validation and evaluate <em>Enhanced-PatchCore</em> for few-shot and many-shot detection. To further eliminate the need for a train set, we seek to use open-source conversational Vision-Language Models (<a href="https://llava-vl.github.io/">LLaVA</a>, <a href="https://github.com/SkunkworksAI/BakLLaVA?tab=readme-ov-file">BakLLaVA</a> and <a href="https://arxiv.org/abs/2311.03079">CogVLM</a>) and <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Jeong_WinCLIP_Zero-Few-Shot_Anomaly_Classification_and_Segmentation_CVPR_2023_paper.html">WinCLIP</a> in zero-shot setting. Our findings indicate that the baselines show promising results in detecting anomalies on the cables. However, they struggle with certain types and grades of anomalies, highlighting the need for further research in real-world industrial contexts. By introducing <em>CableInspect-AD</em>, we aim to push the frontiers of VAD and demonstrate its potential to generalize to complex, real-world domains.    
+          </p>
+          <p>
+            <img id="f1" src="./static/images/few_many_all_strategy_F1Score.png" alt="F1 score">
+            <img id="fpr" src="./static/images/few_many_all_strategy_FPR.png" alt="FPR">
+
+            The figure above shows the image level F1-Score and FPR of the VLMs and <em>Enhanced-PatchCore</em> with different thresholding strategies on our dataset. First, we can observe that CogVLM-17B has the best F1 Score, whereas CogVLM2-19B has the lowest FPR. <em>Enhanced-PatchCore</em> has a better F1 score than all VLMs except CogVLM-17B. There are large variations across VLMs, indicating the need for careful selection. <em>Enhanced-PatchCore</em>, even with limited nominal images, maintains competitiveness while offering the added advantage of pixel-level evaluation.
+          </p>
+          <p>
+
+            <img id="seg" src="./static/images/figure_7_new_spaced.png" alt="segmentation">
+
+
+            <em>Enhanced-Patchcore</em> outperforms WinCLIP in the segmentation task on our cropped dataset (background removed), with an AUPRO of 0.53 &plusmn; 0.08 compared to 0.27 &plusmn; 0.06 for WinCLIP. The figure above displays example outputs from <em>Enhanced-Patchcore</em>, illustrating that the model effectively identifies larger anomalies but struggles with subtler ones. The rightmost image is nominal (green); the rest show anomalies (red). The images (top) and pixel-level prediction heatmap (middle) are shown against ground truth masks (bottom) from different cables. The bottom row shows the segmentation masks coloured based on the anomaly type. Some anomalies are easily detected (left) whereas the others are difficult and are missed (middle). The rightmost image shows a nominal image where texture changes from wear are visible. These texture variations can distract the model, adding complexity to the task. 
+
+          <p>
+             We find that, in general, the baselines show promising results in detecting anomalies on the cables, but struggle to detect anomalies of certain types and grades. All in all, this use case presents an important challenge for the development of new models that perform well on this task. The dataset is available in the public domain under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{TODO,
+  author    = {TODO},
+  title     = {TODO,
+  journal   = {TODO},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section> -->
+
+<section class="section" id="Acknowledgement">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgement</h2>
+    <p> This research was enabled in part by compute resources, software and technical help provided by <a href="https://mila.quebec/en"> Mila</a>. We thank Ali Harakeh and Pierre-Luc St-Charles from the Mila Applied Machine Learning Research Team (AMLRT) for fruitful discussions, brainstorming and feedback. We also thank Hydro-Québec and IREQ for their involvement throughout the project. This website template is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href=#>
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href=# class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+    <script>
+      bulmaCarousel.attach('#carousel-demo', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        loop: true,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 3000,
+      });
+    </script>
+</body>
+</html>

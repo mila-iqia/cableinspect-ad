@@ -1,6 +1,6 @@
 # CableInspect-AD
 
-This is the repository that contains source code for the [CableInspect-AD website](https://mila-iqia.github.io/cableinspect-ad/.
+This is the repository that contains source code for the [CableInspect-AD website](https://mila-iqia.github.io/cableinspect-ad/).
 
 
 # Website License

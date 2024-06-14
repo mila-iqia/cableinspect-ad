@@ -77,7 +77,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://mila.quebec/en/industry/applied-machine-learning-research/">
+      <a class="navbar-item" href="https://mila.quebec/en/industry/applied-machine-learning-research/" target="_blank" rel="noopener noreferrer">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
@@ -160,6 +160,7 @@
               <!-- Code Link. -->
               <span class="link-block">
                 <a href=https://github.com/mila-iqia/cableinspect-ad-code
+                   target="_blank" rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -169,7 +170,8 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href=https://drive.google.com/file/d/126i30i7dRkcf4E5k7x8yysay3Snv6NXv/view
+                <a href="https://hydroquebec.com/data/documents-donnees/donnees-ouvertes/zip/CableInspect-AD.zip"
+                   target="_blank" rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
@@ -331,7 +333,10 @@
             <em>Enhanced-Patchcore</em> outperforms WinCLIP in the segmentation task on our cropped dataset (background removed), with an AUPRO of 0.53 &plusmn; 0.08 compared to 0.27 &plusmn; 0.06 for WinCLIP. The figure above displays example outputs from <em>Enhanced-Patchcore</em>, illustrating that the model effectively identifies larger anomalies but struggles with subtler ones. The rightmost image is nominal (green); the rest show anomalies (red). The images (top) and pixel-level prediction heatmap (middle) are shown against ground truth masks (bottom) from different cables. The bottom row shows the segmentation masks coloured based on the anomaly type. Some anomalies are easily detected (left) whereas the others are difficult and are missed (middle). The rightmost image shows a nominal image where texture changes from wear are visible. These texture variations can distract the model, adding complexity to the task. 
 
           <p>
-             We find that, in general, the baselines show promising results in detecting anomalies on the cables, but struggle to detect anomalies of certain types and grades. All in all, this use case presents an important challenge for the development of new models that perform well on this task. The dataset is available in the public domain under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+             We find that, in general, the baselines show promising results in detecting anomalies on the cables, but struggle to detect anomalies of certain types and grades. All in all, this use case presents an important challenge for the development of new models that perform well on this task. The dataset is available in the public domain under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+             For more information, please refer to the datasheet provided in the paper. The dataset downloaded using <a href="https://hydroquebec.com/data/documents-donnees/donnees-ouvertes/zip/CableInspect-AD.zip" target="_blank" rel="noopener noreferrer">this link </a>includes images and annotation files in COCO format. We provide detailed explanations and scripts to generate labels and masks, along with instructions on how to read the dataset and code to reproduce the results in the <a href="https://github.com/mila-iqia/cableinspect-ad-code" target="_blank" rel="noopener noreferrer"> code repository</a>.
           </p>
         </div>
       </div>
